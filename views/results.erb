@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> 🌈GNR </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+     <link rel="icon" href="https://twitter.com/hellorachelyang/status/898587874781560832">
+     <link rel="shortcut icon" href="https://twitter.com/hellorachelyang/status/898587874781560832">
+     <link href="https://fonts.googleapis.com/css?family=Exo+2:700|Poppins:500|Quicksand:500" rel="stylesheet">
+
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="https://rachel-rachel881025.c9users.io/">
+    <img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f308.svg" width="30" height="30">
+  </a
+  <div class="collapse navbar-collapse bg-transparent" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="https://rachel-rachel881025.c9users.io">GNR: Restrooms for All</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+    </ul>
+  </div>
+</nav>
+<br> </br>
+  <h2> Here are your results! </h2>
+
+<div class="card-group">
+  <div class="card bg-transparent">
+    <a href="<%=@restroom1_url%>">
+      <img class="card-img-top" src="<%= @restroom1_image %>"/>
+    </a>
+      <div class="card-body bg-transparent">
+        <h4 class="card-title"><%= @restroom1 %></h4>
+          <p class="card-text"><%= @restroom1_address %>. <br> <%= @restroom1_city %>, <%= @restroom1_state %> <%= @restroom1_zipcode %></p>
+      </div>
+      <div class="card-footer bg-transparent">
+        <small class="text-bold"><%= @restroom1_rating %> | Rated by <%= @restroom1_review %></small>
+      </div>
+  </div>
+  <div class="card bg-transparent">
+    <a href="<%=@restroom2_url%>">
+      <img class="card-img-top" src="<%= @restroom2_image %>"/>
+    </a>
+      <div class="card-body bg-transparent">
+        <h4 class="card-title"><%= @restroom2 %></h4>
+          <p class="card-text"><%= @restroom2_address %>. <br> <%= @restroom2_city %>, <%= @restroom2_state %> <%= @restroom2_zipcode %></p>
+      </div>
+      <div class="card-footer bg-transparent">
+        <small class="text-bold" style="bold"><%= @restroom2_rating %> | Rated by <%= @restroom2_review %></small>
+      </div>
+  </div>
+  <div class="card bg-transparent">
+    <a href="<%=@restroom3_url%>">
+      <img class="card-img-top" src="<%= @restroom3_image %>"/>
+    </a>
+    <div class="card-body bg-transparent">
+      <h4 class="card-title"><%= @restroom3 %></h4>
+        <p class="card-text"><%= @restroom3_address %>. <br> <%= @restroom3_city %>, <%= @restroom3_state %> <%= @restroom3_zipcode %></p>
+    </div>
+    <div class="card-footer bg-transparent">
+      <small class="text-bold"><%= @restroom3_rating %> | Rated by <%= @restroom3_review %></small>
+    </div>
+  </div>
+</div>
+  <br> </br> 
+
+<div class="card-group">
+  <div class="card bg-transparent">
+    <a href="<%= @restroom4_url %>" >
+      <img class="card-img-top" src="<%= @restroom4_image %>"/>
+    </a>
+    <div class="card-body bg-transparent">
+      <h4 class="card-title"><%= @restroom4 %></h4>
+        <p class="card-text"><%= @restroom4_address %>. <br> <%= @restroom4_city %>, <%= @restroom4_state %> <%= @restroom4_zipcode %> </p>
+    </div>
+    <div class="card-footer bg-transparent">
+      <small class="text-bold"><%= @restroom4_rating %> | Rated by <%= @restroom4_review %></small>
+    </div>
+  </div>
+  <div class="card bg-transparent">
+    <a href="<%=@restroom5_url%>">
+    <img class="card-img-top" src="<%= @restroom5_image %>"/>
+    </a>
+    <div class="card-body bg-transparent">
+      <h4 class="card-title"><%= @restroom5 %></h4>
+      <p class="card-text"><%= @restroom5_address %>. <br> <%= @restroom5_city %>, <%= @restroom5_state %> <%= @restroom5_zipcode %></p>
+    </div>
+    <div class="card-footer bg-transparent">
+      <small class="text-bold"> <%= @restroom5_rating %> | Rated by <%= @restroom5_review %></small>
+    </div>
+  </div>
+  <div class="card bg-transparent">
+    <a href="<%=@restroom6_url%>">
+    <img class="card-img-top" src="<%= @restroom6_image %>"/>
+    <div class="card-body bg-transparent">
+    </a>
+      <h4 class="card-title"><%= @restroom6 %></h4>
+      <p class="card-text"> <%= @restroom6_address %>. <br> <%= @restroom6_city %>, <%= @restroom6_state %> <%= @restroom6_zipcode %></p>
+    </div>
+    <div class="card-footer bg-transparent">
+      <small class="text-bold"> <%= @restroom6_rating %> | Rated by <%= @restroom6_review %></small>
+    </div>
+  </div>
+</div>
+
+
+<!--overall restroom hash-->
+  <!--<h3> <%= @restroom %> </h3> -->
+
+  </body>
+  <style>
+    /*resize {*/
+    /* width:70%;*/
+    /* height:70%;*/
+    /* }*/
+    /*img.display: flex;*/
+    body {
+    height: 100%;
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(#F5B7B1, #D2B4DE, #AED6F1, #A2D9CE, #ABEBC6, #FAD7A0, #EDBB99); /* Standard syntax (must be last) 
+    
+    }
+   
+
+  </style>
+</html>
