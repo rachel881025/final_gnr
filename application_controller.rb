@@ -8,10 +8,23 @@ class MyApp < Sinatra::Base
   get '/' do
     erb :index
   end
+	
+	# get  '/' do 
+      
+    #   erb :about
+    # end
+      
+    get '/about' do 
+
+      erb :about
+    end
+    
+	
   post '/' do
     location = params[:search_term]
     term = params[:type]
   
+    
     #restroom1
     restroom1 = search(term, location)["businesses"][0]["name"]
     restroom1_url = search(term, location)["businesses"][0]["url"]
